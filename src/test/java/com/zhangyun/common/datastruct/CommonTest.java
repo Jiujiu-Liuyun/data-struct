@@ -16,8 +16,5 @@ public class CommonTest {
 
     @Test
     public void jsonTest() {
-        String s = "\"ab\"";
-        String integer = JSONObject.parseObject(s, String.class);
-        log.info("{}", integer);
     }
 }

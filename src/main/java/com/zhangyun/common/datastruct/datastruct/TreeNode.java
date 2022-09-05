@@ -1,25 +1,26 @@
-package com.zhangyun.common.datastruct.tree;
+package com.zhangyun.common.datastruct.datastruct;
 
 /**
- * description: 二叉树节点
+ * description:
  *
  * @author: zhangyun
- * @date: 2022/8/14 20:28
+ * @date: 2022/8/20 16:38
  * @since: 1.0
  */
-public class TreeNode<T> {
+public class TreeNode {
 
-    public T val;
-
+    public int val;
     public TreeNode left;
-
     public TreeNode right;
 
-    public TreeNode(T val) {
+    TreeNode() {
+    }
+
+    TreeNode(int val) {
         this.val = val;
     }
 
-    public TreeNode(T val, TreeNode left, TreeNode right) {
+    TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
         this.left = left;
         this.right = right;
